@@ -1,0 +1,134 @@
+{% extends 'layout.html' %}
+{% block body %}
+    <div class="row justify-content-center pt-2">
+    <h1>Get Your Product Recommendation</h1>
+    </div>
+    <form action="/recommendation" method="POST">
+        <div class="row justify-content-center">
+            <ul class="list-group list-group-horizontal-md pt-3 pl-4 pr-4">
+                {% for item in data_cat[0:5] %}
+                    <div class="form-check form-check-inline col-xs-12">
+                        <input class="form-check-input" type="checkbox" value="{{item}}" name="{{item}}" > 
+                        <label class="form-check-label">{{item}}</label>
+                    </div>
+                {% endfor %}
+            </ul> 
+            <ul class="list-group list-group-horizontal-md pt-3 pl-4 pr-4">
+                {% for item in data_cat[5:10] %}
+                    <div class="form-check form-check-inline col-xs-12">
+                        <input class="form-check-input" type="checkbox" value="{{item}}" name="{{item}}"> 
+                        <label class="form-check-label" >{{item}}</label>
+                    </div>
+                {% endfor %}
+            </ul> 
+            <ul class="list-group list-group-horizontal-md pt-3 pl-4 pr-4">
+                {% for item in data_cat[10:15] %}
+                    <div class="form-check form-check-inline col-xs-12">
+                        <input class="form-check-input" type="checkbox" value="{{item}}" name="{{item}}"> 
+                        <label class="form-check-label" >{{item}}</label>
+                    </div>
+                {% endfor %}
+            </ul> 
+            <ul class="list-group list-group-horizontal-md pt-3 pl-4 pr-4">
+                {% for item in data_cat[15:20] %}
+                    <div class="form-check form-check-inline col-xs-12">
+                        <input class="form-check-input" type="checkbox" value="{{item}}" name="{{item}}"> 
+                        <label class="form-check-label" >{{item}}</label>
+                    </div>
+                {% endfor %}
+            </ul>
+            <ul class="list-group list-group-horizontal-md pt-3 pl-4 pr-4">
+                {% for item in data_cat[20:25] %}
+                    <div class="form-check form-check-inline col-xs-12">
+                        <input class="form-check-input" type="checkbox" value="{{item}}" name="{{item}}"> 
+                        <label class="form-check-label" >{{item}}</label>
+                    </div>
+                {% endfor %}
+            </ul>
+            <ul class="list-group list-group-horizontal-md pt-3 pl-4 pr-4">
+                {% for item in data_cat[25:30] %}
+                    <div class="form-check form-check-inline col-xs-12">
+                        <input class="form-check-input" type="checkbox" value="{{item}}" name="{{item}}"> 
+                        <label class="form-check-label" >{{item}}</label>
+                    </div>
+                {% endfor %}
+            </ul>
+            <ul class="list-group list-group-horizontal-md pt-3 pl-4 pr-4">
+                {% for item in data_cat[30:35] %}
+                    <div class="form-check form-check-inline col-xs-12">
+                        <input class="form-check-input" type="checkbox" value="{{item}}" name="{{item}}"> 
+                        <label class="form-check-label" >{{item}}</label>
+                    </div>
+                {% endfor %}
+            </ul>
+            <ul class="list-group list-group-horizontal-md pt-3 pl-4 pr-4">
+                {% for item in data_cat[35:40] %}
+                    <div class="form-check form-check-inline col-xs-12">
+                        <input class="form-check-input" type="checkbox" value="{{item}}" name="{{item}}"> 
+                        <label class="form-check-label" >{{item}}</label>
+                    </div>
+                {% endfor %}
+            </ul>
+            <ul class="list-group list-group-horizontal-md pt-3 pl-4 pr-4">
+                {% for item in data_cat[40:45] %}
+                    <div class="form-check form-check-inline col-xs-12">
+                        <input class="form-check-input" type="checkbox" value="{{item}}" name="{{item}}"> 
+                        <label class="form-check-label" >{{item}}</label>
+                    </div>
+                {% endfor %}
+            </ul>
+            <ul class="list-group list-group-horizontal-md pt-3 pl-4 pr-4">
+                {% for item in data_cat[45:50] %}
+                    <div class="form-check form-check-inline col-xs-12">
+                        <input class="form-check-input" type="checkbox" value="{{item}}" name="{{item}}"> 
+                        <label class="form-check-label" >{{item}}</label>
+                    </div>
+                {% endfor %}
+            </ul>
+            <ul class="list-group list-group-horizontal-md pt-3 pl-4 pr-4">
+                {% for item in data_cat[50:55] %}
+                    <div class="form-check form-check-inline col-xs-12">
+                        <input class="form-check-input" type="checkbox" value="{{item}}" name="{{item}}"> 
+                        <label class="form-check-label" >{{item}}</label>
+                    </div>
+                {% endfor %}
+            </ul>
+            <ul class="list-group list-group-horizontal-md pt-3 pl-4 pr-4">
+                {% for item in data_cat[55:60] %}
+                    <div class="form-check form-check-inline col-xs-12">
+                        <input class="form-check-input" type="checkbox" value="{{item}}" name="{{item}}"> 
+                        <label class="form-check-label" >{{item}}</label>
+                    </div>
+                {% endfor %}
+            </ul>
+            <ul class="list-group list-group-horizontal-md pt-3 pl-4 pr-4">
+                {% for item in data_cat[60:65] %}
+                    <div class="form-check form-check-inline col-xs-12">
+                        <input class="form-check-input" type="checkbox" value="{{item}}" name="{{item}}"> 
+                        <label class="form-check-label" >{{item}}</label>
+                    </div>
+                {% endfor %}
+            </ul>
+            <ul class="list-group list-group-horizontal-md pt-3 pl-4 pr-4">
+                {% for item in data_cat[65:70] %}
+                    <div class="form-check form-check-inline col-xs-12">
+                        <input class="form-check-input" type="checkbox" value="{{item}}" name="{{item}}"> 
+                        <label class="form-check-label" >{{item}}</label>
+                    </div>
+                {% endfor %}
+            </ul>
+            <ul class="list-group list-group-horizontal-md pt-3 pl-4 pr-4">
+                {% for item in data_cat[70:80] %}
+                    <div class="form-check form-check-inline col-xs-12">
+                        <input class="form-check-input" type="checkbox" value="{{item}}" name="{{item}}"> 
+                        <label class="form-check-label" >{{item}}</label>
+                    </div>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="row justify-content-center pt-3">
+            <button type="submit" class="btn btn-danger mt-3 ">Get Recommendation</button>
+        </div>
+    </form>
+</body>
+{% endblock body %}

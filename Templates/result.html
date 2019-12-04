@@ -1,0 +1,218 @@
+<style>
+     h1,h3{text-align: center;}
+</style>
+{% extends 'layout.html' %}
+{% block body %}
+    <div class="container pt-4 pl-4 pr-4 pb-4">
+        <h1>Top Product Recommendation for Your Choosen Category</h1>
+        <div class="container pt-4">
+            <div class="row pt-4">
+                <div class="col-sm">
+                    <h3>{{data[0]}}</h3>
+                    <table class="table">
+                        <thead>
+                            {% for item in pred[0].columns%}
+                                <th>{{item}}</th>
+                            {% endfor %}
+                        </thead>
+                        <tbody>
+                            {% for index, item in pred[0].iterrows() %}
+                                <tr>
+                                    {% for a in item %}
+                                        <td>{{a}}</td>
+                                    {% endfor%}
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm">
+                    <table class="table">
+                        <h3>{{data[1]}}</h3>
+                        <thead>
+                            {% for item in pred[1].columns%}
+                                <th>{{item}}</th>
+                            {% endfor %}
+                        </thead>
+                        <tbody>
+                            {% for index, item in pred[1].iterrows() %}
+                                <tr>
+                                    {% for a in item %}
+                                        <td>{{a}}</td>
+                                    {% endfor%}
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm">
+                    <table class="table">
+                        <h3>{{data[2]}}</h3>
+                        <thead>
+                            {% for item in pred[2].columns%}
+                                <th>{{item}}</th>
+                            {% endfor %}
+                        </thead>
+                        <tbody>
+                            {% for index, item in pred[2].iterrows() %}
+                                <tr>
+                                    {% for a in item %}
+                                        <td>{{a}}</td>
+                                    {% endfor%}
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <h1>People who love {{data[0]}} also love : </h1>
+        <table class="table">
+            <thead>
+                {% for item in simi[0].columns%}
+                    <th>{{item}}</th>
+                {% endfor %}
+            </thead>
+            <tbody>
+                {% for index, item in simi[0].iterrows() %}
+                    <tr>
+                        {% for a in item %}
+                            <td>{{a}}</td>
+                        {% endfor%}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <table class="table">
+            <thead>
+                {% for item in simi[1].columns%}
+                    <th>{{item}}</th>
+                {% endfor %}
+            </thead>
+            <tbody>
+                {% for index, item in simi[1].iterrows() %}
+                    <tr>
+                        {% for a in item %}
+                            <td>{{a}}</td>
+                        {% endfor%}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <table class="table">
+            <thead>
+                {% for item in simi[2].columns%}
+                    <th>{{item}}</th>
+                {% endfor %}
+            </thead>
+            <tbody>
+                {% for index, item in simi[2].iterrows() %}
+                    <tr>
+                        {% for a in item %}
+                            <td>{{a}}</td>
+                        {% endfor%}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <h1>People who love {{data[1]}} also love : </h1>
+        <table class="table">
+            <thead>
+                {% for item in simi[3].columns%}
+                    <th>{{item}}</th>
+                {% endfor %}
+            </thead>
+            <tbody>
+                {% for index, item in simi[3].iterrows() %}
+                    <tr>
+                        {% for a in item %}
+                            <td>{{a}}</td>
+                        {% endfor%}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <table class="table">
+            <thead>
+                {% for item in simi[4].columns%}
+                    <th>{{item}}</th>
+                {% endfor %}
+            </thead>
+            <tbody>
+                {% for index, item in simi[4].iterrows() %}
+                    <tr>
+                        {% for a in item %}
+                            <td>{{a}}</td>
+                        {% endfor%}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <table class="table">
+            <thead>
+                {% for item in simi[5].columns%}
+                    <th>{{item}}</th>
+                {% endfor %}
+            </thead>
+            <tbody>
+                {% for index, item in simi[5].iterrows() %}
+                    <tr>
+                        {% for a in item %}
+                            <td>{{a}}</td>
+                        {% endfor%}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <h1>People who love {{data[2]}} also love : </h1>
+        <table class="table">
+            <thead>
+                {% for item in simi[6].columns%}
+                    <th>{{item}}</th>
+                {% endfor %}
+            </thead>
+            <tbody>
+                {% for index, item in simi[6].iterrows() %}
+                    <tr>
+                        {% for a in item %}
+                            <td>{{a}}</td>
+                        {% endfor%}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <table class="table">
+            <thead>
+                {% for item in simi[7].columns%}
+                    <th>{{item}}</th>
+                {% endfor %}
+            </thead>
+            <tbody>
+                {% for index, item in simi[7].iterrows() %}
+                    <tr>
+                        {% for a in item %}
+                            <td>{{a}}</td>
+                        {% endfor%}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <table class="table">
+            <thead>
+                {% for item in simi[8].columns%}
+                    <th>{{item}}</th>
+                {% endfor %}
+            </thead>
+            <tbody>
+                {% for index, item in simi[8].iterrows() %}
+                    <tr>
+                        {% for a in item %}
+                            <td>{{a}}</td>
+                        {% endfor%}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock body %}
